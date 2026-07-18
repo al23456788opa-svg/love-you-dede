@@ -1,2 +1,3 @@
-# love-you-dede
+adalah
+
 buat orang sepesial
