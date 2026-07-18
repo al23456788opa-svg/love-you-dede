@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOVE YOUUUU SKEBON ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#00ff66;
+    font-family:monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    overflow:hidden;
+}
+
+.container{
+    text-align:center;
+}
+
+pre{
+    font-size:12px;
+    line-height:12px;
+    animation:glow 1.2s infinite alternate;
+}
+
+h2{
+    margin-top:20px;
+    color:#ff4da6;
+    animation:blink 1s infinite;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 5px #00ff66;
+    }
+    to{
+        text-shadow:0 0 20px #00ff66;
+    }
+}
+
+@keyframes blink{
+    50%{
+        opacity:.4;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<pre id="ascii"></pre>
+
+<h2>💗 Love Youuuu Skebon 😘💗</h2>
+
+</div>
+
+<script>
+const frames=[
+`██╗      ██████╗ ██╗   ██╗███████╗
+██║     ██╔═══██╗██║   ██║██╔════╝
+██║     ██║   ██║██║   ██║█████╗
+██║     ██║   ██║╚██╗ ██╔╝██╔══╝
+███████╗╚██████╔╝ ╚████╔╝ ███████╗
+╚══════╝ ╚═════╝   ╚═══╝  ╚══════╝
+
+██╗   ██╗ ██████╗ ██╗   ██╗██╗   ██╗
+╚██╗ ██╔╝██╔═══██╗██║   ██║██║   ██║
+ ╚████╔╝ ██║   ██║██║   ██║██║   ██║
+  ╚██╔╝  ██║   ██║██║   ██║██║   ██║
+   ██║   ╚██████╔╝╚██████╔╝╚██████╔╝
+   ╚═╝    ╚═════╝  ╚═════╝  ╚═════╝
+
+███████╗██╗  ██╗███████╗██████╗  ██████╗ ███╗   ██╗
+██╔════╝██║ ██╔╝██╔════╝██╔══██╗██╔═══██╗████╗  ██║
+███████╗█████╔╝ █████╗  ██████╔╝██║   ██║██╔██╗ ██║
+╚════██║██╔═██╗ ██╔══╝  ██╔══██╗██║   ██║██║╚██╗██║
+███████║██║  ██╗███████╗██████╔╝╚██████╔╝██║ ╚████║
+╚══════╝╚═╝  ╚═╝╚══════╝╚═════╝  ╚═════╝ ╚═╝  ╚═══╝`
+];
+
+let i=0;
+setInterval(()=>{
+document.getElementById("ascii").textContent=frames[i];
+i=(i+1)%frames.length;
+},300);
+
+document.getElementById("ascii").textContent=frames[0];
+</script>
+
+</body>
+</html>
